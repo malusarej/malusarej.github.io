@@ -22,7 +22,3 @@
 - I spent around seven to eight hours doing this assignment.
 - A lot of time was spent researching components I wanted especially on w3schools and stackoverflow
 - Spent some time conceptualizing the design as well
-
-**(Optional) If you made any assumptions about this assignment, what are they**
-- TAs will replace the image locations with paths relative to their machines.
-
