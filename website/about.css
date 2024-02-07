@@ -1,0 +1,126 @@
+body {
+    background-image: url(/Users/janhavimalusare/Downloads/aboutbg.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.heading {
+    font-family: 'Arial Narrow', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    background-color: maroon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-title {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 3px white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li a{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+    position: relative;
+    transition: color 0.3s;
+    text-shadow: 0px 0px 3px white;
+}
+
+nav li a:hover {
+    color: teal;
+}
+
+a:active {
+    color: purple;
+}
+
+main {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.column {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    flex: 1;
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        flex-direction: row;
+    }
+
+    .nav-container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav li {
+        margin-bottom: 0;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        margin: 0 auto; /* Center the columns */
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    /* Responsive text and content */
+    h1, h2, h3, p, ul {
+        font-size: 90%; /* Adjust as needed */
+        margin-bottom: 8px;
+    }
+}
